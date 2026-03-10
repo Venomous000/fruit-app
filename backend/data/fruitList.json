@@ -1,0 +1,57 @@
+[   
+    {
+        "name": "Banana",
+        "color": ["yellow"],
+        "in_season": true
+    },
+    {
+        "name": "Grapes",
+        "color": ["purple"],
+        "in_season": false
+    },
+    {
+        "name": "Apple",
+        "color": ["red"],
+        "in_season": true
+    },
+    {
+        "name": "Orange",
+        "color": ["orange"],
+        "in_season": true
+    },
+    {
+        "name": "Watermelon",
+        "color": ["red"],
+        "in_season": false
+    },
+    {
+        "name": "Strawberry",
+        "color": ["red"],
+        "in_season": true
+    },
+    {
+        "name": "Peach",
+        "color": ["orange"],
+        "in_season": true
+    },
+    {
+        "name": "Pear",
+        "color": ["green"],
+        "in_season": false
+    },
+    {
+        "name": "Pineapple",
+        "color": ["yellow"],
+        "in_season": true
+    },
+    {
+        "name": "Mango",
+        "color": ["yellow"],
+        "in_season": true
+    },
+    {   
+        "name": "kiwi",
+        "color": ["brown"],
+        "in_season": false
+    }
+]

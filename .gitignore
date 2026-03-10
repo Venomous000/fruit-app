@@ -1,0 +1,32 @@
+#  Secrets & environment 
+.env
+
+#  Python (backend) 
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+backend/.venv/
+backend/.pytest_cache/
+backend/*.egg-info/
+backend/dist/
+backend/build/
+backend/.coverage
+backend/htmlcov/
+
+#  Node / React (frontend) 
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/*.log
+
+#  Docker volumes (if mounted locally) 
+postgres_data/
+
+#  Editor & OS 
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo

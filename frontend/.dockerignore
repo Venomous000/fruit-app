@@ -1,0 +1,16 @@
+# Dependencies – npm install runs inside the image
+node_modules/
+
+# Build output
+dist/
+.vite/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local secrets
+.env
+
+# Docs
+README.md

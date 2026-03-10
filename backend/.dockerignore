@@ -1,0 +1,25 @@
+# Virtual env – pip installs inside the image instead
+.venv/
+
+# Python cache – not needed in image
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+tests/
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+
+# Local secrets – injected via env_file in docker-compose
+.env
+
+# Docs
+README.md

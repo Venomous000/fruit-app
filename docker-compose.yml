@@ -1,0 +1,48 @@
+version: "3.9"
+
+networks:
+  fruit_network:
+    driver: bridge
+
+services:
+  db:
+    image: postgres:15
+    container_name: fruit_db
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - fruit_network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: ./backend
+    container_name: fruit_backend
+    env_file:
+      - .env
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    networks:
+      - fruit_network
+
+  frontend:
+    build: ./frontend
+    container_name: fruit_frontend
+    depends_on:
+      - backend
+    ports:
+      - "5173:5173"
+    networks:
+      - fruit_network
+
+volumes:
+  postgres_data:
