@@ -1,4 +1,4 @@
-# Fruit Explorer
+# Fruit App
 
 A full-stack web application for browsing, filtering, and searching fruits.
 
