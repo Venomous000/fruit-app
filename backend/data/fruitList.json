@@ -1,57 +1,331 @@
-[   
-    {
-        "name": "Banana",
-        "color": ["yellow"],
-        "in_season": true
-    },
-    {
-        "name": "Grapes",
-        "color": ["purple"],
-        "in_season": false
-    },
-    {
-        "name": "Apple",
-        "color": ["red"],
-        "in_season": true
-    },
-    {
-        "name": "Orange",
-        "color": ["orange"],
-        "in_season": true
-    },
-    {
-        "name": "Watermelon",
-        "color": ["red"],
-        "in_season": false
-    },
-    {
-        "name": "Strawberry",
-        "color": ["red"],
-        "in_season": true
-    },
-    {
-        "name": "Peach",
-        "color": ["orange"],
-        "in_season": true
-    },
-    {
-        "name": "Pear",
-        "color": ["green"],
-        "in_season": false
-    },
-    {
-        "name": "Pineapple",
-        "color": ["yellow"],
-        "in_season": true
-    },
-    {
-        "name": "Mango",
-        "color": ["yellow"],
-        "in_season": true
-    },
-    {   
-        "name": "kiwi",
-        "color": ["brown"],
-        "in_season": false
-    }
+[
+  {
+    "name":"Apple - Fuji",
+    "color":["red"],
+    "in_season":true
+  },
+  {
+    "name":"Apple - Granny Smith",
+    "color":["green"],
+    "in_season":false
+  },
+  {
+    "name":"Apple - Gala",
+    "color":["red","yellow"],
+    "in_season":true
+  },
+  {
+    "name":"Apple - Honeycrisp",
+    "color":["red","yellow"],
+    "in_season":false
+  },
+
+  {
+    "name":"Mango - Alphonso",
+    "color":["yellow"],
+    "in_season":true
+  },
+  {
+    "name":"Mango - Kent",
+    "color":["green","yellow"],
+    "in_season":false
+  },
+  {
+    "name":"Mango - Ataulfo",
+    "color":["yellow"],
+    "in_season":true
+  },
+  {
+    "name":"Mango - Haden",
+    "color":["red","yellow"],
+    "in_season":false
+  },
+
+  {
+    "name":"Banana - Cavendish",
+    "color":["yellow"],
+    "in_season":true
+  },
+  {
+    "name":"Banana - Red Banana",
+    "color":["red"],
+    "in_season":false
+  },
+  {
+    "name":"Banana - Plantain",
+    "color":["green"],
+    "in_season":true
+  },
+
+  {
+    "name":"Grapes - Red",
+    "color":["red"],
+    "in_season":true
+  },
+  {
+    "name":"Grapes - Green",
+    "color":["green"],
+    "in_season":true
+  },
+  {
+    "name":"Grapes - Black",
+    "color":["purple"],
+    "in_season":false
+  },
+
+  {
+    "name":"Orange - Navel",
+    "color":["orange"],
+    "in_season":true
+  },
+  {
+    "name":"Orange - Blood Orange",
+    "color":["red"],
+    "in_season":false
+  },
+  {
+    "name":"Orange - Valencia",
+    "color":["orange"],
+    "in_season":true
+  },
+
+  {
+    "name":"Pear - Bartlett",
+    "color":["green"],
+    "in_season":true
+  },
+  {
+    "name":"Pear - Bosc",
+    "color":["brown"],
+    "in_season":false
+  },
+  {
+    "name":"Pear - Anjou",
+    "color":["green"],
+    "in_season":false
+  },
+
+  {
+    "name":"Peach - White",
+    "color":["pale yellow","pink"],
+    "in_season":false
+  },
+  {
+    "name":"Peach - Yellow",
+    "color":["yellow","red"],
+    "in_season":false
+  },
+  {
+    "name":"Peach - Donut",
+    "color":["pale yellow","pink"],
+    "in_season":false
+  },
+
+  {
+    "name":"Plum - Black",
+    "color":["dark purple"],
+    "in_season":true
+  },
+  {
+    "name":"Plum - Red",
+    "color":["red"],
+    "in_season":false
+  },
+  {
+    "name":"Plum - Greengage",
+    "color":["green"],
+    "in_season":true
+  },
+
+  {
+    "name":"Cherry - Bing",
+    "color":["dark red"],
+    "in_season":true
+  },
+  {
+    "name":"Cherry - Rainier",
+    "color":["yellow","red"],
+    "in_season":true
+  },
+  {
+    "name":"Cherry - Sour",
+    "color":["red"],
+    "in_season":false
+  },
+
+  {
+    "name":"Strawberry - June-bearing",
+    "color":["red"],
+    "in_season":true
+  },
+  {
+    "name":"Strawberry - Everbearing",
+    "color":["red"],
+    "in_season":true
+  },
+
+  {
+    "name":"Blueberry - Highbush",
+    "color":["blue"],
+    "in_season":false
+  },
+  {
+    "name":"Blueberry - Lowbush",
+    "color":["blue"],
+    "in_season":false
+  },
+
+  {
+    "name":"Watermelon - Seedless",
+    "color":["green","red"],
+    "in_season":true
+  },
+  {
+    "name":"Watermelon - Yellow Flesh",
+    "color":["green","yellow"],
+    "in_season":true
+  },
+
+  {
+    "name":"Pineapple - Smooth Cayenne",
+    "color":["brown","yellow"],
+    "in_season":false
+  },
+  {
+    "name":"Pineapple - Red Spanish",
+    "color":["red","brown"],
+    "in_season":false
+  },
+
+  {
+    "name":"Papaya - Hawaiian",
+    "color":["yellow","orange"],
+    "in_season":true
+  },
+  {
+    "name":"Papaya - Mexican",
+    "color":["orange"],
+    "in_season":false
+  },
+
+  {
+    "name":"Guava - Pink",
+    "color":["green","pink"],
+    "in_season":true
+  },
+  {
+    "name":"Guava - White",
+    "color":["green","white"],
+    "in_season":false
+  },
+
+  {
+    "name":"Lychee - Mauritius",
+    "color":["red"],
+    "in_season":false
+  },
+  {
+    "name":"Lychee - Brewster",
+    "color":["red"],
+    "in_season":true
+  },
+
+  {
+    "name":"Fig - Black Mission",
+    "color":["purple"],
+    "in_season":false
+  },
+  {
+    "name":"Fig - Kadota",
+    "color":["green"],
+    "in_season":true
+  },
+
+  {
+    "name":"Date - Medjool",
+    "color":["brown"],
+    "in_season":true
+  },
+  {
+    "name":"Date - Deglet Noor",
+    "color":["amber"],
+    "in_season":true
+  },
+
+  {
+    "name":"Coconut - Green",
+    "color":["green"],
+    "in_season":false
+  },
+  {
+    "name":"Coconut - Brown",
+    "color":["brown"],
+    "in_season":false
+  },
+
+  {
+    "name":"Avocado - Hass",
+    "color":["dark green"],
+    "in_season":true
+  },
+  {
+    "name":"Avocado - Fuerte",
+    "color":["green"],
+    "in_season":true
+  },
+
+  {
+    "name":"Kiwi - Green",
+    "color":["brown","green"],
+    "in_season":true
+  },
+  {
+    "name":"Kiwi - Golden",
+    "color":["brown","yellow"],
+    "in_season":true
+  },
+
+  {
+    "name":"Lemon - Eureka",
+    "color":["yellow"],
+    "in_season":false
+  },
+  {
+    "name":"Lemon - Meyer",
+    "color":["yellow","orange"],
+    "in_season":false
+  },
+
+  {
+    "name":"Lime - Persian",
+    "color":["green"],
+    "in_season":false
+  },
+  {
+    "name":"Lime - Key Lime",
+    "color":["green"],
+    "in_season":true
+  },
+
+  {
+    "name":"Pomegranate - Wonderful",
+    "color":["red"],
+    "in_season":false
+  },
+  {
+    "name":"Pomegranate - Angel Red",
+    "color":["red"],
+    "in_season":true
+  },
+
+  {
+    "name":"Apricot - Tilton",
+    "color":["orange"],
+    "in_season":false
+  },
+  {
+    "name":"Apricot - Moorpark",
+    "color":["orange"],
+    "in_season":false
+  }
 ]
