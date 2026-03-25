@@ -11,12 +11,12 @@
   },
   {
     "name":"Apple - Gala",
-    "color":["red","yellow"],
+    "color":["red"],
     "in_season":true
   },
   {
     "name":"Apple - Honeycrisp",
-    "color":["red","yellow"],
+    "color":["red"],
     "in_season":false
   },
 
@@ -27,7 +27,7 @@
   },
   {
     "name":"Mango - Kent",
-    "color":["green","yellow"],
+    "color":["green"],
     "in_season":false
   },
   {
@@ -37,7 +37,7 @@
   },
   {
     "name":"Mango - Haden",
-    "color":["red","yellow"],
+    "color":["red"],
     "in_season":false
   },
 
@@ -107,17 +107,17 @@
 
   {
     "name":"Peach - White",
-    "color":["pale yellow","pink"],
+    "color":["pale yellow"],
     "in_season":false
   },
   {
     "name":"Peach - Yellow",
-    "color":["yellow","red"],
+    "color":["yellow"],
     "in_season":false
   },
   {
     "name":"Peach - Donut",
-    "color":["pale yellow","pink"],
+    "color":["pink"],
     "in_season":false
   },
 
@@ -177,29 +177,29 @@
 
   {
     "name":"Watermelon - Seedless",
-    "color":["green","red"],
+    "color":["green"],
     "in_season":true
   },
   {
     "name":"Watermelon - Yellow Flesh",
-    "color":["green","yellow"],
+    "color":["green"],
     "in_season":true
   },
 
   {
     "name":"Pineapple - Smooth Cayenne",
-    "color":["brown","yellow"],
+    "color":["brown"],
     "in_season":false
   },
   {
     "name":"Pineapple - Red Spanish",
-    "color":["red","brown"],
+    "color":["red"],
     "in_season":false
   },
 
   {
     "name":"Papaya - Hawaiian",
-    "color":["yellow","orange"],
+    "color":["yellow"],
     "in_season":true
   },
   {
@@ -210,12 +210,12 @@
 
   {
     "name":"Guava - Pink",
-    "color":["green","pink"],
+    "color":["green"],
     "in_season":true
   },
   {
     "name":"Guava - White",
-    "color":["green","white"],
+    "color":["green"],
     "in_season":false
   },
 
@@ -276,12 +276,12 @@
 
   {
     "name":"Kiwi - Green",
-    "color":["brown","green"],
+    "color":["brown"],
     "in_season":true
   },
   {
     "name":"Kiwi - Golden",
-    "color":["brown","yellow"],
+    "color":["brown"],
     "in_season":true
   },
 
@@ -292,7 +292,7 @@
   },
   {
     "name":"Lemon - Meyer",
-    "color":["yellow","orange"],
+    "color":["yellow"],
     "in_season":false
   },
 
