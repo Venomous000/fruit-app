@@ -2,15 +2,15 @@
 Unit tests for FruitService and its private _fuzzy_filter helper.
 
 Two layers of testing:
-  1. _fuzzy_filter  – pure logic, no database.
+  1. _fuzzy_filter   pure logic, no database.
                       Uses a simple _Stub object instead of a real Fruit model.
-  2. get_fruits     – uses a real SQLite session from the seeded_session fixture.
+  2. get_fruits      uses a real SQLite session from the seeded_session fixture.
                       Tests the full data-fetch + filter + paginate flow.
 
 Fixtures (from conftest.py)
 ----------------------------
-  db_session      – clean empty SQLite session
-  seeded_session  – SQLite session pre-loaded with 11 fruits
+  db_session       clean empty SQLite session
+  seeded_session   SQLite session pre-loaded with 11 fruits
 
 Seed counts
 -----------
@@ -26,9 +26,7 @@ import pytest
 from app.services.fruit_service import FruitService, FUZZY_THRESHOLD
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # Minimal stub used by _fuzzy_filter tests — no DB, no SQLAlchemy needed
-# ─────────────────────────────────────────────────────────────────────────────
 
 class _Stub:
     """Lightweight stand-in for a Fruit ORM object."""
@@ -46,9 +44,7 @@ def svc():
     return FruitService(db=None)
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # _fuzzy_filter — substring (fast-path) behaviour
-# ─────────────────────────────────────────────────────────────────────────────
 
 class TestFuzzyFilterSubstring:
     def test_exact_full_name_matches(self, svc):
@@ -101,9 +97,7 @@ class TestFuzzyFilterSubstring:
         assert result[0].name == "Banana"
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # _fuzzy_filter — rapidfuzz fallback behaviour
-# ─────────────────────────────────────────────────────────────────────────────
 
 class TestFuzzyFilterFuzzyFallback:
     def test_typo_single_char_missing(self, svc):
@@ -147,9 +141,7 @@ class TestFuzzyFilterFuzzyFallback:
         assert len(result) == 1
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # get_fruits — no filters (full table)
-# ─────────────────────────────────────────────────────────────────────────────
 
 class TestGetFruitsNoFilter:
     def test_total_is_11(self, seeded_session):
@@ -182,9 +174,7 @@ class TestGetFruitsNoFilter:
         assert result["page_size"] == 7
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # get_fruits — in_season filter
-# ─────────────────────────────────────────────────────────────────────────────
 
 class TestGetFruitsInSeasonFilter:
     def test_in_season_true_count(self, seeded_session):
@@ -213,9 +203,7 @@ class TestGetFruitsInSeasonFilter:
         assert t + f == 11
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # get_fruits — name filter
-# ─────────────────────────────────────────────────────────────────────────────
 
 class TestGetFruitsNameFilter:
     def test_exact_name(self, seeded_session):
@@ -253,9 +241,7 @@ class TestGetFruitsNameFilter:
         assert {"Banana", "Orange", "Mango"}.issubset(names)
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # get_fruits — color filter
-# ─────────────────────────────────────────────────────────────────────────────
 
 class TestGetFruitsColorFilter:
     def test_color_red_count(self, seeded_session):
@@ -279,9 +265,7 @@ class TestGetFruitsColorFilter:
         assert result["total"] == 0
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # get_fruits — combined filters
-# ─────────────────────────────────────────────────────────────────────────────
 
 class TestGetFruitsCombinedFilters:
     def test_red_and_in_season_true(self, seeded_session):
@@ -306,9 +290,7 @@ class TestGetFruitsCombinedFilters:
         assert result["total"] == 0
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # get_fruits — pagination
-# ─────────────────────────────────────────────────────────────────────────────
 
 class TestGetFruitsPagination:
     def test_page_1_page_size_5(self, seeded_session):
